@@ -10,8 +10,7 @@ ul {
   color: black;
 }
 
-a:hover,
-:focus {
+a:hover {
   color: #2196f3;
 }
 
