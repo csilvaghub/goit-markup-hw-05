@@ -325,7 +325,7 @@ SVG STYLES
       rgba(26, 25, 56, 1) 74%,
       rgba(2, 0, 36, 1)
     ),
-    url("../images/sharing-food.jpg");
+    url(../images/sharing-food.jpg);
 
   display: flex;
   text-align: center;
