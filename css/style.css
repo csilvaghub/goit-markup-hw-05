@@ -3,6 +3,7 @@
 ::before {
   box-sizing: border-box;
 }
+
 a,
 ul {
   list-style-type: none;
@@ -23,7 +24,7 @@ button {
   border-radius: 4px;
 }
 
-button:hover{
+button:hover {
   background-color: #2196f3;
   color: #ffffff;
   cursor: pointer;
@@ -32,20 +33,18 @@ button:hover{
 }
 
 :root {
-  --web-studio: "Raleway";
-}
-
-:root {
-  --font-family: "Roboto";
+  --main-font: "Roboto";
+  --second-font: "Raleway";
+  --black-bg: white;
 }
 
 body {
-  font-family: var(--font-family), "Helvetica Neue", "Verdana", "Tahoma",
+  font-family: var(--main-font), "Helvetica Neue", "Verdana", "Tahoma",
     sans-serif;
 }
 
 .webstudio-style {
-  font-family: var(--web-studio);
+  font-family: var(--second-font);
   font-size: 26px;
   font-weight: 700;
   line-height: normal;
@@ -54,7 +53,7 @@ body {
 }
 
 .webstudio-style-final {
-  font-family: var(--web-studio);
+  font-family: var(--second-font);
   font-size: 26px;
   font-weight: 700;
   line-height: normal;
@@ -64,7 +63,7 @@ body {
 }
 
 .studio-style {
-  color: #ffffff;
+  color: var(--black-bg);
 }
 
 .studio-style > li {
@@ -80,7 +79,7 @@ body {
 }
 
 .studio-style a:not(:hover) {
-  color: #ffffff;
+  color: var(--black-bg);
 }
 
 .final-bg {
@@ -100,7 +99,7 @@ ul {
 
 .style-h1-studio {
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--black-bg);
   font-size: 44px;
   font-style: normal;
   font-weight: 900;
@@ -114,7 +113,7 @@ ul {
 .uppercase-style-footer {
   text-transform: uppercase;
   font-size: 14px;
-  color: #ffffff;
+  color: var(--black-bg);
   padding-left: 20px;
   margin-bottom: 0px;
   /*padding: 45px;*/
@@ -167,7 +166,7 @@ p {
 }
 
 .container {
-  margin: 0px;
+  margin: auto;
   /*padding: 0 400px;*/
   width: 1600px;
 }
@@ -209,7 +208,7 @@ SVG STYLES
   stroke: #188ce8;
 }
 
-.svg-hover:hover > .size-of-icon-1{
+.svg-hover:hover > .size-of-icon-1 {
   color: #188ce8;
 }
 
@@ -218,7 +217,7 @@ SVG STYLES
   height: 16px;
 }
 
-.svg-hover:hover > .size-of-icon-2{
+.svg-hover:hover > .size-of-icon-2 {
   color: #188ce8;
 }
 
@@ -278,11 +277,8 @@ SVG STYLES
 
 .font-style {
   font-size: 44px;
-  font-family: var(--font-family);
-  font-style: normal;
   font-weight: 900;
   line-height: 60px;
-
   text-align: center;
 }
 
@@ -320,16 +316,17 @@ SVG STYLES
 **/
 
 .style-bg-1 {
-  background: rgb(162, 165, 166);
-  background: linear-gradient(
-    180deg,
-    rgba(162, 165, 166, 1) 0%,
-    rgba(135, 137, 144, 1) 4%,
-    rgba(91, 91, 108, 1) 16%,
-    rgba(55, 54, 79, 1) 39%,
-    rgba(26, 25, 56, 1) 74%,
-    rgba(2, 0, 36, 1) 100%
-  );
+  background-image: linear-gradient(
+      180deg,
+      rgba(162, 165, 166, 1) 0%,
+      rgba(135, 137, 144, 1) 4%,
+      rgba(91, 91, 108, 1) 16%,
+      rgba(55, 54, 79, 1) 39%,
+      rgba(26, 25, 56, 1) 74%,
+      rgba(2, 0, 36, 1)
+    ),
+    url("../images/sharing-food.jpg");
+
   display: flex;
   text-align: center;
   align-items: center;
@@ -337,7 +334,7 @@ SVG STYLES
   justify-content: center;
   width: 100%;
   height: 500px;
-  background-image: url('../images/sharing-food.jpg');
+
 }
 
 .flex-section2-studio {
