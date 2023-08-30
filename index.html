@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     />
+    <link rel="stylesheet" href="./css/modal.css">
     <title>Studio</title>
   </head>
   <body class="center-content">
@@ -21,9 +22,9 @@
       <nav class="flex-nav">
         <a class="webstudio-style" href="portafolio.html">WebStudio</a>
         <ul class="flex-nav">
-          <li><a href="portafolio.html">Studio</a></li>
-          <li><a href="portafolio.html">Portfolio</a></li>
-          <li><a href="portafolio.html">Contacts</a></li>
+          <li class="list-link"><a class="current" href="portafolio.html">Studio</a></li>
+          <li class="list-link"><a class="current" href="portafolio.html">Portfolio</a></li>
+          <li class="list-link"><a class="current" href="portafolio.html">Contacts</a></li>
         </ul>
       </nav>
     </div>
@@ -50,7 +51,17 @@
         <h1 class="style-h1-studio">
           effective solutions for your business
         </h1>
-        <button type="button">Request our service</button>
+        <button type="button" data-modal-open>Request our service
+        </button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+              <button class="close-modal" data-modal-close><svg>
+                <use
+                  href="./images/all-icons.svg/icons.svg#close-modal"
+                ></use>
+              </svg></button>
+          </div>
+      </div>
       </section>
       <section>
         <div>
@@ -112,13 +123,17 @@
       <div class="section2-wtd">
           <h2>What we do</h2>
           <ul class="section2-images-wtd">
+            <div class="section2-images-wtd">
             <li>
-              <img
+              <img 
                 src="images/image_1.jpg"
                 alt="Hands over a keyboard typing"
                 width="373"
               />
             </li>
+            <p class="label-wtd">desktop apps</p>
+          </div>
+          <div class="section2-images-wtd">
             <li>
               <img
                 src="images/image_2.jpg"
@@ -126,6 +141,9 @@
                 width="373"
               />
             </li>
+            <p class="label-wtd">mobile apps</p>
+          </div>
+          <div class="section2-images-wtd">
             <li>
               <img
                 src="images/image_3.jpg"
@@ -133,6 +151,8 @@
                 width="373"
               />
             </li>
+            <p class="label-wtd">design solutions</p>
+          </div>
           </ul>
         </div>
       </section>
@@ -372,5 +392,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
