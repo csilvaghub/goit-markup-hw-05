@@ -21,10 +21,13 @@
     <div>
       <nav class="flex-nav">
         <a class="webstudio-style" href="portafolio.html">WebStudio</a>
-        <ul class="flex-nav">
-          <li class="list-link"><a class="current" href="portafolio.html">Studio</a></li>
-          <li class="list-link"><a class="current" href="portafolio.html">Portfolio</a></li>
-          <li class="list-link"><a class="current" href="portafolio.html">Contacts</a></li>
+        <ul class="flex-nav2">
+          <li class="list-link">
+            <a class="current-pg" href="index.html">Studio</a></li>
+          <li class="list-link">
+            <a href="portafolio.html">Portfolio</a></li>
+          <li class="list-link">
+            <a href="">Contacts</a></li>
         </ul>
       </nav>
     </div>
@@ -51,17 +54,8 @@
         <h1 class="style-h1-studio">
           effective solutions for your business
         </h1>
-        <button type="button" data-modal-open>Request our service
+        <button class="modal-btt" type="button" data-modal-open>Request our service
         </button>
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-              <button class="close-modal" data-modal-close><svg>
-                <use
-                  href="./images/all-icons.svg/icons.svg#close-modal"
-                ></use>
-              </svg></button>
-          </div>
-      </div>
       </section>
       <section>
         <div>
@@ -392,6 +386,17 @@
         </ul>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+          <button class="close-modal" data-modal-close><svg>
+            <use
+              href="./images/all-icons.svg/icons.svg#close-modal"
+            ></use>
+          </svg></button>
+      </div>
+  </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
+margin: auto;
+width: 1600px;
