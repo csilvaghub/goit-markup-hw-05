@@ -596,7 +596,7 @@ SVG STYLES
 }
 
 button {
-  padding: 20px;
+  padding: 10px;
   height: 30px;
   margin: 5px;
   display: flex;
@@ -615,7 +615,7 @@ button:hover {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  left: 91%;
+  left: 92%;
 }
 
 .close-modal:hover {
