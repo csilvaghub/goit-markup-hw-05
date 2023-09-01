@@ -457,7 +457,7 @@ SVG STYLES
   height: 4px;
   background-color: var(--light-blue);
   border-radius: 2px;
-  bottom: -6px;
+  bottom: -8px;
 }
 
 .current-pg:hover::after {
