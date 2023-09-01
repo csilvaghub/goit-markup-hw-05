@@ -52,10 +52,9 @@ body {
 .webstudio-style {
   font-family: var(--second-font);
   font-size: 26px;
-  font-weight: 700;
   letter-spacing: 0.78px;
   padding: 0 60px;
-
+  color: var(--light-blue);
   display: block;
   font-size: 1.5em;
   margin-block-start: 0.83em;
@@ -64,13 +63,13 @@ body {
   margin-inline-end: 0px;
 }
 
-.webstudio-style-final {
+.webstudio-style-final > a {
   font-family: var(--second-font);
   font-size: 26px;
-  font-weight: 700;
   letter-spacing: 0.78px;
   padding: 20px 60px 0px 60px;
   margin: 0px;
+  color: var(--light-blue);
 }
 
 .studio-style {
@@ -97,6 +96,7 @@ body {
   background: var(--light-black-bg);
   padding: 60px 0px 47px 0px;
   display: flex;
+  width: 1600px;
 }
 
 .header-style-studio > nav,
@@ -112,7 +112,6 @@ ul {
   text-transform: uppercase;
   color: var(--black-bg);
   font-size: 44px;
-  font-weight: 900;
   line-height: 60px;
   letter-spacing: 2.64px;
   width: 650px;
@@ -142,7 +141,6 @@ ul {
 
 .style-section-3-studio > ul {
   font-size: 16px;
-  font-weight: 500;
   letter-spacing: 0.48px;
 }
 .style-section-3-studio {
@@ -151,12 +149,10 @@ ul {
 }
 .description-ourteam {
   color: var(--decorative-font-card);
-  font-weight: 400;
 }
 
 .style-section-2-portfolio > li:not(p) > h3 {
   font-size: 18px;
-  font-weight: 700;
   letter-spacing: 1.08px;
 }
 
@@ -170,7 +166,6 @@ ul {
 
 .border:hover {
   cursor: pointer;
-  /*box-shadow: var(--shadow-box);*/
 }
 
 .container-img-port {
@@ -194,13 +189,15 @@ p {
 .filter-image-style {
   color: var(--decorative-font-card);
   font-size: 16px;
-  font-weight: 400;
   letter-spacing: 0.48px;
 }
 
-.center-content {
+.container {
   margin: auto;
-  width: 1600px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-middle-position {
@@ -214,6 +211,7 @@ p {
 .flex-nav {
   display: flex;
   align-items: center;
+  padding-right: 250px;
 }
 
 .flex-nav2 {
@@ -226,10 +224,6 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 110px;
-  padding-right: 68px;
-  /*padding-top: 10px;
-  padding-bottom: 10px;*/
 }
 
 .flex-header > li {
@@ -317,7 +311,6 @@ SVG STYLES
 
 .font-style {
   font-size: 44px;
-  font-weight: 900;
   line-height: 60px;
   text-align: center;
 }
@@ -327,7 +320,8 @@ SVG STYLES
   padding: 15px;
   justify-content: center;
   flex-direction: row;
-  margin-bottom: 20px;
+  width: 220px;
+  margin: auto;
 }
 
 .logos-figure {
@@ -371,9 +365,8 @@ SVG STYLES
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 1600px;
   padding: 207px 0px 182px 0px;
-  /*margin: auto;*/
 }
 
 .flex-section2-studio {
@@ -433,7 +426,6 @@ SVG STYLES
   font-family: var(--main-font);
   font-size: 18px;
   line-height: 28px;
-  font-weight: 400;
   letter-spacing: 0.54px;
   padding: 0px;
   margin: 0px;
@@ -457,29 +449,15 @@ SVG STYLES
   padding: 20px 20px 20px 0px;
 }
 
-/*.list-link:not(:last-child) {
-  margin-bottom: -1px;
-  
-}*/
-
-/*.current-pg{
-  left: 0;
-  display: inline-flex;
-  border-radius: 2px;
-  transition: color 250ms var(--cubic);
-}*/
-
 .current-pg::after {
   content: "";
   position: absolute;
   left: 0;
-  /*display: inline-block;*/
   width: 75%;
   height: 4px;
   background-color: var(--light-blue);
   border-radius: 2px;
-  bottom: -8px;
-  /*visibility: hidden;*/
+  bottom: -6px;
 }
 
 .current-pg:hover::after {
@@ -543,6 +521,10 @@ SVG STYLES
   padding: 10px;
 }
 
+.color-btt:hover {
+  color: var(--black-bg);
+}
+
 .all-images-portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -555,7 +537,6 @@ SVG STYLES
 
 /*MODAL*/
 .modal-body {
-  height: 300vh;
   background-color: var(--light-black-bg);
 }
 
@@ -566,7 +547,7 @@ SVG STYLES
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   right: 0;
-  transition: background-color 5s var(--cubic), transform 5s var(--cubic);
+  animation-name: opacityName;
 }
 
 .backdrop:hover {
@@ -576,7 +557,21 @@ SVG STYLES
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
   right: 0;
-  transform: rotate(1turn);
+  animation-name: opacityName;
+  animation-duration: 250ms;
+}
+
+/*ANIMATION*/
+@keyframes opacityName {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .modal {
@@ -597,15 +592,13 @@ SVG STYLES
 
 button {
   padding: 10px;
-  height: 30px;
   margin: 5px;
   display: flex;
   align-items: center;
 }
 button:hover {
   cursor: pointer;
-  background-color: var(--light-blue);
-  color: var(--black-bg);
+  color: var(--light-black-bg);
   box-shadow: var(--shadow-box);
 }
 
@@ -616,6 +609,7 @@ button:hover {
   height: 35px;
   border-radius: 50%;
   left: 92%;
+
 }
 
 .close-modal:hover {
@@ -624,8 +618,11 @@ button:hover {
   width: 35px;
   height: 35px;
   border-radius: 50%;
+
 }
 
 .modal-btt {
-  padding: 20px;
+  padding: 15px;
+  background-color: var(--light-blue);
+  color: var(--black-bg);
 }
