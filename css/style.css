@@ -29,6 +29,7 @@ a:hover {
   color: var(--light-blue);
 }
 
+
 button {
   font-size: 16px;
   padding: 20px 20px;
@@ -146,26 +147,30 @@ ul {
 .style-section-3-studio {
   background: var(--light-purple-bg);
   padding: 35px;
+  width: 1600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .description-ourteam {
   color: var(--decorative-font-card);
 }
 
-.style-section-2-portfolio > li:not(p) > h3 {
+.style-section-2-portfolio > li:not(p) > h3{
   font-size: 18px;
   letter-spacing: 1.08px;
 }
 
-.border {
-  border: 1px solid var(--decorative-cards);
-  transition: box-shadow 250ms var(--cubic);
+.slide-over {
   overflow: hidden;
   position: relative;
-  height: 294px;
 }
 
-.border:hover {
-  cursor: pointer;
+.h3-tittle-location{
+  padding-left: 20px;
+  font-size: 18px;
+  color: var(--light-black-bg);
 }
 
 .container-img-port {
@@ -211,7 +216,9 @@ p {
 .flex-nav {
   display: flex;
   align-items: center;
-  padding-right: 250px;
+  padding-right: 300px;
+  /*padding-right: 250px;
+  padding-left: 200px;*/
 }
 
 .flex-nav2 {
@@ -227,7 +234,7 @@ p {
 }
 
 .flex-header > li {
-  padding-right: 30px;
+  padding-left: 20px;
 }
 /**
 SVG STYLES
@@ -338,7 +345,6 @@ SVG STYLES
   fill: var(--light-blue);
   border: 1px solid var(--light-blue);
   cursor: pointer;
-  border-radius: 4px;
 }
 .location-3 {
   padding-top: 20px;
@@ -371,10 +377,9 @@ SVG STYLES
 
 .flex-section2-studio {
   display: flex;
-  padding: 5px;
+  padding: 5px 5px 5px 5px;
   justify-content: space-between;
-  width: 1200px;
-  margin: auto;
+
 }
 
 .space-section2-studio {
@@ -388,6 +393,7 @@ SVG STYLES
   align-items: center;
   flex-direction: column;
   padding-bottom: 50px;
+  /*padding-left: 400px;*/
 }
 
 .section2-images-wtd {
@@ -427,16 +433,18 @@ SVG STYLES
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.54px;
-  padding: 0px;
+  text-align: justify;
+  padding: 55px;
   margin: 0px;
   transition: transform 250ms var(--cubic);
   transform: translateY(0%);
   visibility: hidden;
 }
 
-.border:hover .label-techno {
+.label-techno:hover {
   transform: translateY(-100%);
   visibility: visible;
+
 }
 
 .container-img-port:hover .label-techno {
@@ -461,16 +469,8 @@ SVG STYLES
 }
 
 .current-pg:hover::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  display: inline-block;
-  width: 75%;
-  height: 4px;
-  background-color: var(--light-blue);
-  border-radius: 2px;
-  bottom: -8px;
   visibility: visible;
+  display: inline-block;
 }
 
 .section3-ourteam {
@@ -551,13 +551,6 @@ SVG STYLES
 }
 
 .backdrop:hover {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  right: 0;
-  animation-name: opacityName;
   animation-duration: 250ms;
 }
 
@@ -614,11 +607,6 @@ button:hover {
 
 .close-modal:hover {
   background: var(--black-bg);
-  border: solid 1px var(--decorative-modal-close);
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-
 }
 
 .modal-btt {
