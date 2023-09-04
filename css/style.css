@@ -69,7 +69,6 @@ body {
   font-family: var(--second-font);
   font-size: 26px;
   letter-spacing: 0.78px;
-  /*padding: 20px 60px 0px 60px;*/
   margin: 0px;
   color: var(--light-blue);
 }
@@ -90,8 +89,6 @@ body {
 .final-section {
   display: flex;
   flex-direction: column;
- /* align-items: center;
-  padding-left: 110px;*/
   padding-right: 68px;
 }
 
@@ -103,7 +100,7 @@ body {
   background: var(--light-black-bg);
   padding: 60px 0px 47px 0px;
   display: flex;
-  /*width: 1600px;*/
+
 }
 
 .header-style-studio > nav,
@@ -155,11 +152,6 @@ ul {
   padding: 35px;
   text-align: center;
 
-  /*width: 1600px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;*/
 }
 .description-ourteam {
   color: var(--decorative-font-card);
@@ -204,9 +196,6 @@ ul {
 .container {
   margin: auto;
   width: 1200px;
-  /*display: flex;
-  flex-direction: column;
-  align-items: center;*/
 }
 
 .container-middle-position {
@@ -221,8 +210,6 @@ ul {
   display: flex;
   align-items: center;
   padding-right: 300px;
-  /*padding-right: 250px;
-  padding-left: 200px;*/
 }
 
 .flex-nav2 {
@@ -470,11 +457,7 @@ SVG STYLES
 }
 
 .section3-ourteam{
-  /*display: flex;
-  flex-direction: column;
-  justify-content: center;*/
   align-items: center;
-  
 }
 
 .section3-images-ourteam {
