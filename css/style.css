@@ -119,6 +119,8 @@ ul {
   line-height: 60px;
   letter-spacing: 2.64px;
   width: 650px;
+  margin: auto;
+  padding-bottom: 10px;
 }
 
 .line-block {
@@ -357,19 +359,16 @@ SVG STYLES
     ),
     url(../images/sharing-food.jpg);
 
-  display: flex;
   text-align: center;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
   width: 1600px;
   padding: 207px 0px 182px 0px;
+  margin: auto;
 }
 
 .flex-section2-studio {
   display: flex;
   padding: 5px 5px 5px 5px;
-  justify-content: space-between;
+  justify-content: space-around;
 
 }
 
@@ -594,4 +593,5 @@ button:hover {
   padding: 15px;
   background-color: var(--light-blue);
   color: var(--black-bg);
+  margin: auto;
 }
