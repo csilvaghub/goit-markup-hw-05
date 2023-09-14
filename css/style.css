@@ -76,6 +76,10 @@ body {
   display: flex;
 }
 
+.location-3{
+  padding-bottom: 50px;
+}
+
 .studio-style {
   color: var(--black-bg);
 }
@@ -200,9 +204,7 @@ ul {
 }
 
 .container-middle-position {
-  display: flex;
-  justify-content: space-around;
-  width: 1200px;
+ 
   padding: 10px;
   margin: auto;
 }
@@ -317,6 +319,7 @@ SVG STYLES
   font-size: 44px;
   line-height: 60px;
   text-align: center;
+  margin: 0;
 }
 
 .log-p {
@@ -343,13 +346,15 @@ SVG STYLES
   border: 1px solid var(--light-blue);
   cursor: pointer;
 }
-.location-3 {
-  padding-top: 20px;
-}
+
 
 /**
 SVG STYLES
 **/
+
+.section{
+  padding: 94px 0px 0px 0px;
+}
 
 .style-bg-1 {
   background-image: linear-gradient(
@@ -364,8 +369,10 @@ SVG STYLES
     url(../images/sharing-food.jpg);
   text-align: center;
   width: 1600px;
-  padding: 207px 0px 182px 0px;
+  height: 600px;
+  display: flex;
   margin: auto;
+  max-width: 1200px;
 }
 
 .flex-section2-studio {
@@ -376,7 +383,6 @@ SVG STYLES
 }
 
 .space-section2-studio {
-  margin: 40px 0;
   text-align: justify;
 }
 
@@ -465,7 +471,7 @@ SVG STYLES
 .section3-images-ourteam {
   display: flex;
   gap: 30px;
-  padding: 5px;
+  padding: 5px 5px 50px 5px;
   justify-content: space-around;
 }
 
@@ -488,7 +494,6 @@ SVG STYLES
 }
 
 .container-portfolio {
-  padding-top: 120px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -498,6 +503,7 @@ SVG STYLES
   display: flex;
   justify-content: center;
   padding-left: 0px;
+  margin: 0px;
 }
 
 .flex-filter-buttons > li {
