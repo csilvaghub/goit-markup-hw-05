@@ -58,10 +58,8 @@ body {
   color: var(--light-blue);
   display: block;
   font-size: 1.5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .webstudio-style-final > a {
@@ -154,7 +152,6 @@ ul {
 }
 .style-section-3-studio {
   background: var(--light-purple-bg);
-  padding: 35px;
   text-align: center;
 
 }
@@ -216,7 +213,6 @@ ul {
 }
 
 .flex-nav2 {
-  padding-right: 150px;
   display: flex;
   margin: 0;
 }
@@ -372,14 +368,13 @@ SVG STYLES
   height: 600px;
   display: flex;
   margin: auto;
-  max-width: 1200px;
+  max-width: 1600px;
 }
 
 .flex-section2-studio {
   display: flex;
-  padding: 5px 5px 5px 5px;
-  justify-content: space-around;
-
+  justify-content: space-between;
+  margin: 0px;
 }
 
 .space-section2-studio {
@@ -396,8 +391,8 @@ SVG STYLES
 
 .section2-images-wtd {
   display: flex;
-  gap: 30px;
-  padding: 5px;
+  justify-content: space-between;
+  margin: 0px;
 }
 
 .label-wtd {
@@ -470,9 +465,9 @@ SVG STYLES
 
 .section3-images-ourteam {
   display: flex;
-  gap: 30px;
   padding: 5px 5px 50px 5px;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0px;
 }
 
 .section3-images-ourteam > li {
@@ -515,13 +510,12 @@ SVG STYLES
 }
 
 .all-images-portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  padding-left: 0px;
-  justify-content: center;
-  margin-bottom: 40px;
-  width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding-left: 0px;
+    justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 /*MODAL*/
