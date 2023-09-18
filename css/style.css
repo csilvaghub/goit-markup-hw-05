@@ -100,8 +100,6 @@ body {
 .final-bg {
   background: var(--light-black-bg);
   padding: 60px 0px 47px 0px;
-  display: flex;
-
 }
 
 .header-style-studio > nav,
@@ -197,7 +195,7 @@ ul {
 
 .container {
   margin: auto;
-  width: 1200px;
+  max-width: 1200px;
 }
 
 .container-middle-position {
@@ -382,7 +380,6 @@ SVG STYLES
 }
 
 .section2-wtd {
-  display: flex;
   align-items: center;
   flex-direction: column;
   padding-bottom: 50px;
